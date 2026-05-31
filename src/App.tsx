@@ -17,8 +17,9 @@ function Layout() {
   ]
 
   const isActive = (path: string) => {
-    if (path === '/') return location.pathname === '/'
-    return location.pathname.startsWith(path)
+    const hash = location.hash.replace(/^#/, '') || '/'
+    if (path === '/') return hash === '/'
+    return hash.startsWith(path)
   }
 
   const handleBeginJourney = () => {
