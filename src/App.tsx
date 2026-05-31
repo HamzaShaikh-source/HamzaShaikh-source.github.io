@@ -3,7 +3,6 @@ import Home from './pages/Home'
 import Studio from './pages/Studio'
 import AboutUs from './pages/AboutUs'
 import Journal from './pages/Journal'
-import ReachUs from './pages/ReachUs'
 import './index.css'
 
 function Layout() {
@@ -15,7 +14,6 @@ function Layout() {
     { label: 'Studio', path: '/studio' },
     { label: 'About', path: '/about' },
     { label: 'Journal', path: '/journal' },
-    { label: 'Reach Us', path: '/reach-us' },
   ]
 
   const isActive = (path: string) => {
@@ -51,7 +49,7 @@ function Layout() {
             className="flex items-center gap-1 bg-transparent border-none cursor-pointer"
             style={{ fontFamily: "'Instrument Serif', serif" }}
           >
-            <span className="text-3xl tracking-tight text-foreground">Shaikh</span>
+            <span className="text-3xl tracking-tight text-foreground">R.E.V</span>
           </button>
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
@@ -70,7 +68,7 @@ function Layout() {
             className="liquid-glass rounded-full px-6 py-2.5 text-sm cursor-pointer transition-transform duration-300 hover:scale-[1.03]"
             style={{ color: 'hsl(0, 0%, 100%)' }}
           >
-            Begin Journey
+            My Journey
           </button>
         </nav>
 
@@ -79,7 +77,6 @@ function Layout() {
           <Route path="/studio" element={<Studio />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/journal" element={<Journal />} />
-          <Route path="/reach-us" element={<ReachUs />} />
         </Routes>
 
         <footer className="px-8 py-8 text-center text-xs max-w-7xl mx-auto w-full" style={{ color: 'hsl(240, 4%, 50%)' }}>
