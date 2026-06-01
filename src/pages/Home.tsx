@@ -16,6 +16,13 @@ export const projects = [
     desc: 'A browser-based robot simulation environment for practicing coding and algorithm design. Features A* pathfinding, 4 API modes, live CodeMirror editor, procedural map generation, and an auto-optimizer.',
     tech: ['A*', 'Canvas', 'CodeMirror', 'JS'],
   },
+  {
+    title: 'The Orchestrator',
+    url: 'https://hamzashaikh-source.github.io/the-orchestrator/',
+    tag: 'Blueprint',
+    desc: 'A browser-native AI orchestration engine that coordinates multiple free AI websites into a multi-agent pipeline. No API keys, no servers, no costs. Full architecture blueprint and implementation plan.',
+    tech: ['AI', 'Orchestration', 'Chrome Ext', 'Automation'],
+  },
 ]
 
 export default function Home() {
